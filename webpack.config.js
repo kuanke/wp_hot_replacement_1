@@ -16,6 +16,7 @@
     ],
     output: {
       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/' //以确保文件资源能够在 http://localhost:<端口号> 下正确访问
     }
   };
